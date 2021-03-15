@@ -89,8 +89,24 @@
             <div class="col-xs-11">
             <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email"></asp:TextBox>
             </div>
+
+            <label class="col-xs-11"></label>
+            <div class="col-xs-11">
+                <asp:Button ID="btnSignUp" class="btn btn-success" runat="server" Text="SignUp" OnClick="Button1_Click" />
+            </div>
         </div>
         <!----sign up page---->
+
+        <!--Footer Contents start--->
+        <hr />
+        <footer class="footer-pos">
+            <div class="container">
+                <p class =" pull-right"><a href="#">Back To Top</a></p>
+                <p>&copy;By Tran Phuong Nam &middot;<a href ="Home.aspx">Home</a>&middot;<a href =" #">About</a>&middot;<a href="#">Contact Us</a>&middot;<a href="#">Products</a></p>
+            </div>
+        </footer>
+
+              <!--Footer Contents end--->
     </form>
 </body>
 </html>
