@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ProjectV2.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserHome.aspx.cs" Inherits="ProjectV2.WebForm3" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sign Up</title>
-    <meta charset ="utf-8"/>
+    <title>User Home Page</title>
+    <meta charset ="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <link href="css/Customer.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div>
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class ="container ">
                     <div class ="navbar-header">
@@ -53,51 +54,24 @@
                                     
                                 </ul>
                             </li>
-                            <li class="active"><a href="SignUp.aspx">SignUp</a></li>
-                            <li ><a href="SignIn.aspx">SignIn</a></li>
+                            <li >
+                                <asp:Button ID="btnLogout" CssClass="btn btn-default navbar" runat="server" Text="Sign Out" />
+                            </li>
+                            
                         </ul>
                     </div>
 
 
                 </div>
             </div>
+         </div>
+      </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="lblSuccess" runat="server" CssClass="text-success"></asp:Label>
 
-        </div>
-
-        <!----sign up page---->
-        <div class ="center-page">
-            <label class="col-xs-11">UserName:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtUsername" runat="server" Class="form-control" placeholder="Enter Your Username"></asp:TextBox>
-            </div>
-
-            <label class="col-xs-11">Password:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtPassword" runat="server" Class="form-control" placeholder="Enter Your Password" TextMode="Password"></asp:TextBox>
-            </div>
-
-            <label class="col-xs-11">Confirm Password:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtConfirmPassword" runat="server" Class="form-control" placeholder="Enter password again" TextMode="Password"></asp:TextBox>
-            </div>
-
-            <label class="col-xs-11">Your Full name:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtFullName" runat="server" Class="form-control" placeholder="Enter Your Full Name"></asp:TextBox>
-            </div>
-
-            <label class="col-xs-11">Your Email name:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email"></asp:TextBox>
-            </div>
-
-            <label class="col-xs-11"></label>
-            <div class="col-xs-11">
-                <asp:Button ID="btnSignUp" class="btn btn-success" runat="server" Text="SignUp" OnClick="Button1_Click" />
-                <asp:Label ID="lbMsg" runat="server"></asp:Label>
-            </div>
-        </div>
-        <!----sign up page---->
 
         <!--Footer Contents start--->
         <hr />

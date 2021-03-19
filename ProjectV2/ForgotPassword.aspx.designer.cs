@@ -11,7 +11,7 @@ namespace ProjectV2
 {
 
 
-    public partial class WebForm2
+    public partial class ForgotPassword
     {
 
         /// <summary>
@@ -24,66 +24,48 @@ namespace ProjectV2
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtUsername control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
-        /// txtPassword control.
+        /// txtEmailID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailID;
 
         /// <summary>
-        /// txtConfirmPassword control.
+        /// RequiredFieldValidatorEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEmail;
 
         /// <summary>
-        /// txtFullName control.
+        /// btnResetPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFullName;
+        protected global::System.Web.UI.WebControls.Button btnResetPass;
 
         /// <summary>
-        /// txtEmail control.
+        /// lblResetPassMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// btnSignUp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignUp;
-
-        /// <summary>
-        /// lbMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbMsg;
+        protected global::System.Web.UI.WebControls.Label lblResetPassMsg;
     }
 }
