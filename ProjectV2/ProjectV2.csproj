@@ -122,6 +122,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
+    <Content Include="SQLquery\petshop.sql" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="SignUp.aspx" />
