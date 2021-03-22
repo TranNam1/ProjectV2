@@ -18,7 +18,15 @@ namespace ProjectV2
             else
             {
                 Response.Redirect("~/SignIn.aspx");
+
+                
             }
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SignIn.aspx");
+            Session["Username"] = null;
         }
     }
 }

@@ -64,9 +64,11 @@ namespace ProjectV2
                         Response.Redirect("~/AdminHome.aspx");
                     }
                 }
+
                 else
                 {
                     lblError.Text = "Invalid Username or Password";
+
                 }
                 //Response.Write("<script> alert('Login Successfully Done'); </script>");
                 clr();

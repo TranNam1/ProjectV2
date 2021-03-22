@@ -55,7 +55,7 @@
                                 </ul>
                             </li>
                             <li >
-                                <asp:Button ID="btnLogout" CssClass="btn btn-default navbar" runat="server" Text="Sign Out" />
+                                <asp:Button ID="btnLogout" CssClass="btn btn-default navbar" runat="server" Text="Sign Out" OnClick="btnLogout_Click" />
                             </li>
                             
                         </ul>
@@ -83,6 +83,8 @@
         </footer>
 
               <!--Footer Contents end--->
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
