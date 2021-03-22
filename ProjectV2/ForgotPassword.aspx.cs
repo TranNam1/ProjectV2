@@ -40,7 +40,7 @@ namespace ProjectV2
                     //Send reset link
                     String ToEmailAddress = dt.Rows[0][3].ToString();
                     String Username = dt.Rows[0][1].ToString();
-                    String EmailBody = "Hi," +Username + ",<br/><br/>Click link below to reset password<br/> <br/> http://localhost:54172/RecoverPassword.aspx?Uid="+myGUID;
+                    String EmailBody = "Hi," +Username + ",<br/><br/>Click link below to reset password<br/> <br/> http://localhost:54172/RecoverPassword.aspx?id="+myGUID;
 
                     MailMessage PassRecMail = new MailMessage("phuongnam477416@gmail.com", ToEmailAddress);
 
@@ -52,7 +52,7 @@ namespace ProjectV2
                     {
                         client.EnableSsl = true;
                         client.UseDefaultCredentials = false;
-                        client.Credentials = new NetworkCredential("phuongnam477416@gmail.com", "asdasd@1243");
+                        client.Credentials = new NetworkCredential("phuongnam477416@gmail.com", "01666427464nam");
                         client.Host = "smtp.gmail.com";
                         client.Port = 587;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
