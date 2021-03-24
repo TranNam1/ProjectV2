@@ -89,7 +89,7 @@
                 <div class=" form-group">
                     <div class=" col-md-2 "></div>
                     <div class=" col-md-6">
-                        <asp:CheckBox ID="CheckBox1" runat="server" />
+                        <asp:CheckBox ID="CheckBox1" runat="server"  />
                         <asp:Label ID="Label3" CssClass=" control-label" runat="server" Text="Remember"></asp:Label>
                     </div>
                 </div>
