@@ -69,28 +69,36 @@
             <label class="col-xs-11">UserName:</label>
             <div class="col-xs-11">
             <asp:TextBox ID="txtUsername" runat="server" Class="form-control" placeholder="Enter Your Username"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" CssClass=" text-danger" ErrorMessage="Required Username" ControlToValidate="txtUserName" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+
             </div>
 
             <label class="col-xs-11">Password:</label>
             <div class="col-xs-11">
             <asp:TextBox ID="txtPassword" runat="server" Class="form-control" placeholder="Enter Your Password" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" CssClass=" text-danger" ErrorMessage="Required Password" ControlToValidate="txtPassword" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+
             </div>
 
             <label class="col-xs-11">Confirm Password:</label>
             <div class="col-xs-11">
             <asp:TextBox ID="txtConfirmPassword" runat="server" Class="form-control" placeholder="Enter password again" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorConfirmPassword" runat="server" CssClass=" text-danger" ErrorMessage="Required Confirm Password" ControlToValidate="txtConfirmPassword" ForeColor="#FF3300"></asp:RequiredFieldValidator>
             </div>
 
             <label class="col-xs-11">Your Full name:</label>
             <div class="col-xs-11">
             <asp:TextBox ID="txtFullName" runat="server" Class="form-control" placeholder="Enter Your Full Name"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorFullName" runat="server" CssClass=" text-danger" ErrorMessage="Required FullName" ControlToValidate="txtFullName" ForeColor="#FF3300"></asp:RequiredFieldValidator>
             </div>
 
             <label class="col-xs-11">Your Email name:</label>
             <div class="col-xs-11">
             <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email"></asp:TextBox>
-            </div>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" CssClass=" text-danger" ErrorMessage="Required Email" ControlToValidate="txtEmail" ForeColor="#FF3300"></asp:RequiredFieldValidator>
 
+            </div>
+            
             <label class="col-xs-11"></label>
             <div class="col-xs-11">
                 <asp:Button ID="btnSignUp" class="btn btn-success" runat="server" Text="Sign Up" OnClick="Button1_Click" />
