@@ -43,21 +43,25 @@
                                     <li class="drodown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            <li class="dropdown-header">Cat</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Cat Food</a></li>
-                                            <li><a href="#">Cat jewelry</a></li>
-                                            <li><a href="#">Clothes</a></li>
 
-                                            <li role="separator" class="divider"></li>
-                                            <li class="dropdown-header">Dog</li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Dog Food</a></li>
-                                            <li><a href="#">Dog jewelry</a></li>
-                                            <li><a href="#">Clothes</a></li>
+                                            <li><a href="AddProduct.aspx">Add Product</a></li>
+
                                         </ul>
                                     </li>
-                                    <li><a href="#">Manage</a></li>
+                                    <li class="drodown">
+
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AddBrand.aspx">Add Brand</a></li>
+                                            <li><a href="AddCategory.aspx">Add Category</a></li>
+                                            <li><a href="SubCategory.aspx">Add SubCategory</a></li>
+                                            <li><a href="AddCatDog.aspx">Add Animal</a></li>
+                                        </ul>
+                                    </li>
+
+
+
+
                                     <li>
                                         <asp:Button ID="btnAdminLogout" CssClass="btn btn-default navbar" runat="server" Text="Sign Out" OnClick="btnAdminLogout_Click" />
                                     </li>
@@ -76,16 +80,7 @@
             </div>
 
 
-            <!--Footer Contents start--->
-            <hr />
-            <footer class="footer-pos">
-                <div class="container">
-                    <p class=" pull-right"><a href="#">Back To Top</a></p>
-                    <p>&copy;By Tran Phuong Nam &middot;<a href="Home.aspx">Home</a>&middot;<a href=" #">About</a>&middot;<a href="#">Contact Us</a>&middot;<a href="#">Products</a></p>
-                </div>
-            </footer>
 
-            <!--Footer Contents end--->
         </div>
     </form>
 </body>

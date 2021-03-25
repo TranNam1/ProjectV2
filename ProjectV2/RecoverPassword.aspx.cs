@@ -29,7 +29,16 @@ namespace ProjectV2
                     cmd.Parameters.AddWithValue("@Id", GUIDvalue);
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     sda.Fill(dt);
-                    Uid = Convert.ToInt32(dt.Rows[0][1]);
+                    if (dt.Rows.Count != 0)
+                    {
+                        Uid = Convert.ToInt32(dt.Rows[0][1]);
+                    }
+                    else
+                    {
+                        lblmsg.Text = "Your link is Expired or Invalid  Try Again!";
+                        lblmsg.ForeColor = System.Drawing.Color.Red;
+                    }
+                   
                 }
                 else
                 {
@@ -58,14 +67,24 @@ namespace ProjectV2
 
         protected void btnResetPass_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["PetShop"].ConnectionString))
+            if (txtNewPass.Text !="" && txtConfirmPass.Text!=""&& txtNewPass.Text == txtConfirmPass.Text)
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("Update tblUsers set Password=@p where Uid=@Uid", conn);
-                cmd.Parameters.AddWithValue("@p", txtNewPass.Text);
-                cmd.Parameters.AddWithValue("@Uid", Uid);
-                cmd.ExecuteNonQuery();
-                Response.Write("<script> alert('Password Reset Successfully'); </script>");
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["PetShop"].ConnectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("Update tblUsers set Password=@p where Uid=@Uid", conn);
+                    cmd.Parameters.AddWithValue("@p", txtNewPass.Text);
+                    cmd.Parameters.AddWithValue("@Uid", Uid);
+                    cmd.ExecuteNonQuery();
+                    
+
+                    SqlCommand cmd2 = new SqlCommand("delete from ForgotPass where Uid='" + Uid + "'", conn);
+                    cmd2.ExecuteNonQuery();
+                    Response.Write("<script> alert('Password Reset Successfully'); </script>");
+                    Response.Redirect("~/SignIn.aspx ");
+
+
+                }
             }
         }
     }

@@ -10,7 +10,7 @@
 
 namespace ProjectV2
 {
-    public partial class AdminHome
+    public partial class WebForm4
     {
     }
 }
